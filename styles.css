@@ -1,3 +1,14 @@
+/*-------------------------------*\
+  $COLORS
+/*-------------------------------*\
+
+/**
+* Branding Colors
+*/
+table tr:hover {
+  background-color: #dbe279;
+}
+
 html {
   font-size: 10px;
 }
