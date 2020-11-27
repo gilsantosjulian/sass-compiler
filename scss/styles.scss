@@ -1,0 +1,42 @@
+// Libraries, settings and variables
+@import './lib/variables';
+
+// Base elements
+@import './tablas';
+@import './base/botones';
+@import './base/links';
+@import './base/tipografia';
+
+// SASS Components
+@import './components/grids'; // all the system grid
+
+
+
+// Utilities
+// We included  at the final in order don't overwrite
+@import './components/_utilitiess.scss' // -> Align rigth - align left, float left - float rigth. 
+
+
+html {
+  font-size: 10px;
+}
+
+.card {
+  width: 28rem;
+  background-color: #151515;
+  padding: 2.5rem;
+  color: #ffffff;
+  border-radius: .8rem;
+
+  &_name {
+    font-size: 3rem;
+  }
+
+  &_description {
+    font-size: 1.6rem;
+
+    &--red {
+      color: blue;
+    }
+  }
+}
