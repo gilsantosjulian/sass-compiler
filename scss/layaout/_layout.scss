@@ -1,0 +1,9 @@
+/*-------------------------------*\
+  $MIXINS
+\*-------------------------------*/
+
+section {
+  @include max-didth;
+  background-color: $color-lightgrey;
+  padding: $padding;
+}

@@ -1,6 +1,9 @@
 // Libraries, settings and variables
 @import './lib/variables';
 
+// Mixins
+@import './lib/mixins';
+
 // Base elements
 @import './tablas';
 @import './base/botones';
@@ -9,6 +12,9 @@
 
 // SASS Components
 @import './components/grids'; // all the system grid
+
+// Layout
+@import './layaout/layout';
 
 
 
