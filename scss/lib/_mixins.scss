@@ -2,8 +2,8 @@
   $MIXINS
 \*-------------------------------*/
 
-@mixin max-width  {
-  max-width: 800px;
+@mixin max-width($maxWidth: $page-max-width)  {
+  max-width: $maxWidth;
   margin-left: auto;
   margin-right: auto;
 }

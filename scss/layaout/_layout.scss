@@ -7,3 +7,13 @@ section {
   background-color: $color-lightgrey;
   padding: $padding;
 }
+
+.max-width--huge {
+  @include max-didth(1200px);
+  background-color: $color-lightgrey;
+  padding: $padding;
+}
+
+header {
+  background-color: $color-brand;
+}
