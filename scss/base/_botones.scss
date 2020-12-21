@@ -22,5 +22,18 @@
 // BEM (Block Elem ent Modifier)
 // B: .btn
 // E: .btn__icon -> with double __
+// M: .btn--info -> with double --
 
-  
+/**
+  Info button using @extend
+*/
+.btn--info {
+  @extend .btn;
+  color: $color-info;
+  &:hover {
+    color: $color-info;
+  }
+  &:visited {
+    color: $color-info;
+  }
+}
