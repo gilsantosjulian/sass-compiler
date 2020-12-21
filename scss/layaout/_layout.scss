@@ -4,6 +4,9 @@
 
 section {
   @include max-didth;
+  @include respond-to(800px) {
+    background-color: red;
+  }
   background-color: $color-lightgrey;
   padding: $padding;
 }
