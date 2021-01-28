@@ -1,13 +1,13 @@
-$indices:(raiz: 1000,
-  carrousel: 1010,
-  tooltip: 1020,
-  navmenu: 1030,
-  modal: 1040);
+$indices:(raiz: 1,
+  carrousel: 2,
+  tooltip: 3,
+  navmenu: 4,
+  modal: 5);
 
 @function setIndex($capa) {
   @return map-get($indices, $capa);
 }
 
 .message {
-  z-index: setIndex(modal)
+  z-index: setIndex(navmenu)
 }
