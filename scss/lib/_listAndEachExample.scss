@@ -1,0 +1,9 @@
+$fonts: normal bold italic;
+
+@each $font in $fonts {
+  .#{$font} { // escapar una variable dentro de un string, se hace con #{}
+    font-weight: $font; 
+  }
+}
+
+// vamos a construir varias clases con el mismo código, DRY -> Don't repeat yourself
