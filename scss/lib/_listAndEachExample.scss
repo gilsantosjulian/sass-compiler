@@ -12,6 +12,17 @@ $actors: Juan Pedro Ana Jose;
 
 @each $actor in $actors {
   .#{$actor} {
-    background: image-url('images/foto-#{actor}.jpg') no-repeat;
+    background: image-url('images/foto-#{$actor}.jpg') no-repeat;
   }
+}
+
+$countries: arg col can aus;
+$i: 0px;
+
+@each $country in $countries {
+  .flag-#{$country} {
+    background-image: url('../../public/#{$country}.png');
+    background-position: $i 0;
+  }
+  $i: $i + 10;
 }
