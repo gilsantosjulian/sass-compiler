@@ -19,10 +19,16 @@ $actors: Juan Pedro Ana Jose;
 $countries: arg col can aus;
 $i: 0px;
 
+%flag {
+  width: 64px;
+  height: 64px;
+}
+
 @each $country in $countries {
-  .flag-#{$country} {
+  .flag__#{$country} {
     background-image: url('../../public/#{$country}.png');
     background-position: $i 0;
+    @extend %flag;
   }
   $i: $i + 10;
 }
